@@ -1,0 +1,123 @@
+@font-face {
+  font-family: 'Graphik-Extralight';
+  src: url('fonts/Graphik-Extralight.eot');
+  src: url('fonts/Graphik-Extralight.eot#iefix') format('embedded-opentype'), url('fonts/Graphik-Extralight.woff') format('woff'), url('fonts/Graphik-Extralight.ttf') format('truetype'), url('fonts/Graphik-Extralight.svg#Graphik-Extralight') format('svg');
+  font-weight: lighter;
+  font-style: normal;
+}
+body {
+  background: #669999;
+  font-family: 'Graphik-Extralight', sans-serif;
+  margin: 0;
+  color: #ffffff;
+}
+main {
+  padding: 0 20px;
+}
+.row {
+  width: 48%;
+  padding: 1%;
+  float: left;
+}
+.playGame {
+  margin: 20px 0;
+}
+.results {
+  padding: 10px 0;
+  width: 100%;
+  clear: both;
+}
+.selections {
+  clear: left;
+}
+.selections section {
+  float: left;
+  margin: 0 10px;
+}
+.showWinner {
+  width: 100%;
+}
+.playerSetUp {
+  margin-bottom: 10px;
+}
+.hidden {
+  display: none;
+}
+[data-selection="rock"],
+.rock {
+  border-radius: 50%;
+  background: #003333;
+  width: 100px;
+  height: 100px;
+}
+[data-selection="paper"],
+.paper {
+  background: #0d4d4d;
+  width: 100px;
+  height: 100px;
+}
+[data-selection="scissors"],
+.scissors {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 50px 100px 50px 0;
+  border-color: transparent #407f7f transparent transparent;
+}
+header {
+  padding: 15px;
+  background: #226666;
+}
+header .rock,
+header .paper,
+header .scissors {
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin-right: 10px;
+}
+header .scissors {
+  border-width: 10px 20px 10px 0;
+  width: 0px;
+  height: 0px;
+}
+header h1 {
+  margin: 0;
+  font-size: 1em;
+  color: #fff;
+  font-weight: normal;
+}
+header h1 > div {
+  float: left;
+  width: 90px;
+}
+select,
+button {
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #cccccc;
+  border-width: 1px;
+  height: 34px;
+}
+@media (max-width: 700px) {
+  .row {
+    width: 100%;
+    clear: left;
+  }
+}
+@media (max-width: 320px) {
+  select,
+  button {
+    width: 100%;
+  }
+  select {
+    margin-bottom: 10px;
+  }
+  .showWinner {
+    width: 100%;
+    padding: 10% 0;
+  }
+  .selections section:last-child {
+    float: right;
+  }
+}

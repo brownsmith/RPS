@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>RPS</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="style/style.css" rel="stylesheet">
+	</head>
+	<body>
+		
+		<header role="banner">
+			<h1><span class="rock"></span>Rock <span class="paper"></span>Paper <span class="scissors"></span>Scissors</h1>
+		</header>
+
+		<main>
+			
+			<section class="row" id="player1">
+				<h3>Player 1</h3>
+				<p>
+					Please choose between human and computer for player 1
+				</p>
+				<div class="playerSetUp">
+					<select id="player1select">
+						<option value="computer">Computer</option>
+						<option value="human">Human</option>
+					</select>
+					<button id="player1choose">Choose this player</button>
+				</div>
+			</section>
+		
+			<section class="row" id="player2">
+				<h3>Player 2</h3>
+				<p>
+					Please choose between human and computer for player 2
+				</p>
+				<div class="playerSetUp">
+					<select id="player2select">
+						<option value="computer">Computer</option>
+						<option value="human">Human</option>
+					</select>
+					<button id="player2choose">Choose this player</button>
+				</div>
+			</section>
+				
+			<section class="row playGame">
+				<button id="playGame">Show the results!</button>
+			</section>
+
+			<section class="row selections" id="playerSelections">
+				<section id="player1Selection"></section>
+				<section id="player2Selection"></section>
+			</section>
+
+			<section class="results">
+				<section id="showWinner" class="showWinner"></section>
+			</section>
+
+			<section>
+				<button class="hidden" id="playGameAgainBtn">Play again?</button>
+			</section>
+
+		</main>
+
+		<script type="text/javascript" src="scripts/rps.js"></script>
+
+	</body>
+</html>
