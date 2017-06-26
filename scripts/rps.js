@@ -187,8 +187,6 @@ RPS.showResult = function(winner){
 
 };
 
-// I have used the following add/remove class functions before, and are the only re-used code in the puzzle
-
 // if class is present
 RPS.hasClass = function(el,cls) {
 	return el.className.match(new RegExp('(\\s|^)'+cls+'(\\s|$)'));
